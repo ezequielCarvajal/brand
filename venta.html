@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>venta</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+               <div class="brand-img">
+                <img src="./Assets/image/logo.png" alt="brand logo">
+               </div> 
+               <div class="nav-options">
+                  <ul>
+                      <li><a href="#">Faqs</a></li>
+                      <li> <a href="#">Producto y descripcion</a></li>
+                  </ul>
+               </div>
+        </nav>
+    </header>
+    <main class="venta-main">
+        <div class="product-venta--container">
+            <div class="venta-product">
+              <img src="./Assets/image/box2.png">
+              <h3>Producto 1</h3>
+              <p>Miles de productos en el mercado, pero nada como una caja con gatitos, excelente elección </p>
+            </div>
+            <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CW3KMTFSRGEPJ"  method="POST" class="venta-form"> 
+                <label for="name">Nombre</label>
+                <input type="text" name="name" required>
+                <label for="mail">Mail</label>
+                <input type="email" name="email" required>
+                <label for="phone">Telèfono</label>
+                <input type="text" name="phone" required>
+                <button type="submit" > Confirmar pago </button>
+            </form>
+
+             <!-- más info:  https://developer.paypal.com/docs/paypal-payments-standard/integration-guide/formbasics/ -->
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Términos y condiciones</p>
+        <p>Proyecto curso Platzi</p>
+        <p>contacto@mail.com</p>
+       </footer>
+</body>
+</html>

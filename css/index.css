@@ -33,11 +33,8 @@
 }
 
          /* main */
-.main{
-    position: relative;
-    width: 100%;
-}
-.main h1{
+
+h1{
     margin: 5rem;
 font-size: 2.5rem;
 align-items: center;
@@ -48,38 +45,56 @@ align-items: center;
 h3 {
     font-size: 1.3rem;
 }
+p, a {
+    font-size: 1rem;
+}
+.main {
+    width: 100%;
+}
 .products-container {
-    background-image: url("/Assets/image/curve.png");
-    background-size: cover;
-    background-position: center top;
-    margin-top: 20rem;
-    padding: 5%;
-    display: flex;
+    background-image: url("../Assets/image/curve.png");
+    background-size: 100% 50vh;
+    background-repeat: no-repeat;
+    margin-top: 7rem;
+    padding-bottom: 2.5rem;
+   
 }
 .products {
-    padding: 1rem;
-}
-.products img {
-    width: 80%;
-    position: relative;
-    left: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+
 
 }
 .product-content {
-    background: white;
-    padding: 2rem;
-   box-shadow: 0 0 3px 2px #c1bcbc;
-   margin-top: -20rem;
-
+    max-width: 125px;
+    margin-left: 1.3rem;
+    box-shadow: 0 0 3px 2px #c1bcbc;
+    position: relative;
+    top: -5rem;
+  
 }
+
+.products img {
+    width: 80%;
+    position: relative;
+    left: 1rem
+}
+
+
+
 .main-button {
     background-color: var(--green-color);
     width: 100%;
     padding: 0.5rem;
     margin-top: 1rem;
-    color: white;
     border: 0;
+}
+.main-button a {
+    color: white;
     font-size: 1rem;
+    text-decoration: none;
 }
 .main-button:hover {
     background-color: #5e9e22;
@@ -91,11 +106,13 @@ h3 {
 .features-container {
     margin-top: 10rem;
     display: flex;
+    justify-content: space-around;
 }
 .feature img {
    max-width: 80px;
 }
 .feature {
+    max-width: 200px;
  margin: 1rem; 
  padding-left: 0.8rem;
  margin-bottom:5rem;
@@ -114,9 +131,67 @@ h3 {
   width: 80%;
   max-width: 350px;
   margin: 1rem auto;
+
   box-shadow: -1px 6px 3px 1px #00000042;
+  padding-right: 1rem;
   padding-bottom: 0.7rem;
 }
+
+           /* sale page */
+
+
+.product-venta--container{
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.venta-product, .venta-form {
+    box-shadow: -1px 3px 3px 3px #dfdfdf;
+    border-radius: 3px;
+    width: 300px;
+    height: 280px;
+}
+.venta-product {
+  margin-right: 1.5rem;
+  height: 250px;
+}
+.venta-product h3, p{
+  margin: 1rem 1rem;
+}
+.venta-product img {
+   margin: 0 6rem;
+}
+.venta-form label, button, input {
+  display: block;
+  width: 80%;
+  margin: 0.3rem auto;
+  padding: 0.8rem;
+  font-size: 12px;
+}
+.product-venta--container button  {
+    color: white;
+    font-weight: bold;
+    background-color: var(--green-color);
+    border: none;
+    border-radius: 2px;
+}
+          /* Products */
+
+.product{
+    display: flex;
+    margin: 5rem 10%;
+}
+.product img {
+    width: 150px;
+}
+.info-product {
+    width: 60%;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -124,4 +199,11 @@ h3 {
     height: 3rem;
     background-color: #313337;
     align-items: center;
+}
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #eee;
 }

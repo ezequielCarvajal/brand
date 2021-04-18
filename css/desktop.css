@@ -1,0 +1,37 @@
+@media screen and (min-width: 950px) {
+
+    h1 {
+        width: 480px;
+        margin: 10rem auto;
+
+    }
+    .product-content {
+    max-width: 160px;
+    top: -7rem;
+    }
+.products-container {
+    padding-bottom: 5rem;
+
+}
+.features-container{
+    margin: auto 5rem;
+
+}
+.opinions-container {
+    margin: auto 5rem;
+    display: flex;
+}
+}
+
+
+@media screen and (max-width: 950px) {
+    .product-venta--container {
+        display: block;
+        width: 100%;
+    }
+    .venta-product, form {
+        display: block;
+        max-width: 250px;
+        margin: 2rem auto;
+    }
+}
